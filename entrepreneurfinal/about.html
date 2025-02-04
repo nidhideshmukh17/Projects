@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>About Us - Digital Incubators</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- Custom Styles -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar-brand {
+            color: #fff;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #007bff;
+        }
+
+        /* Hero Section Styles */
+        .hero-section {
+            background-image: url('./bg.png'); /* Replace with your actual hero image */
+            background-size: cover;
+            color: #000000;
+            padding: 150px 1;
+        }
+
+        .hero-section h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+        }
+
+        /* About Section Styles */
+        .about-section {
+            background-color: #fff;
+            padding: 80px 0;
+        }
+
+        .about-section h2 {
+            color: #343a40;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        .about-section p {
+            color: #6c757d;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .about-section h3 {
+            color: #343a40;
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        /* Team Section Styles */
+        .team-section {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+
+        .team-section h2 {
+            color: #343a40;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        .team-member {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+
+        .team-member h4 {
+            color: #343a40;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .team-member p {
+            color: #6c757d;
+            font-size: 1.1rem;
+        }
+
+        /* CTA Section Styles */
+        .cta-section {
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        .cta-section p {
+            color: #6c757d;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .cta-section .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+        }
+
+        .cta-section .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="https://img.icons8.com/cotton/64/network-care--v1.png" style="width: 50px;height: 50px;">&nbsp;<b>Digital Incubators</b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <!-- Login Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="loginDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Login
+                </a>
+                <div class="dropdown-menu" aria-labelledby="loginDropdown">
+                    <a class="dropdown-item" href="admin/">Admin</a>
+                    <a class="dropdown-item" href="user/">Entrepreneur</a>
+                    <a class="dropdown-item" href="mentor/">Mentor</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="blogs.html">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section text-center" style="background-image: url('./46.jpg'); background-size: cover; width: auto; height: 700px; background-color: #333; color: hsl(0, 0%, 0%); padding: 50px 0;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h1 class="display-4 font-weight-bold">Empower Your Business Growth</h1>
+                <p class="lead">Connecting Visionary Entrepreneurs with Strategic Mentors!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- About Us Section -->
+<section class="about-section">
+    <div class="container">
+        <h2>About Us</h2>
+        <p>Welcome to Digital Incubators, where we connect visionary entrepreneurs with strategic investors to foster innovation and drive sustainable business growth. Our mission is to empower businesses to thrive and succeed in a dynamic and competitive market.</p>
+
+        <h3>Our Mission</h3>
+        <p>To facilitate meaningful connections between entrepreneurs and investors, providing valuable resources and guidance to drive business success.</p>
+
+        <h3>Our Vision</h3>
+        <p>To be a leading platform that fuels innovation, fosters collaboration, and transforms ideas into successful and sustainable businesses.</p>
+    </div>
+</section>
+
+
+<!-- CTA Section -->
+<section class="cta-section text-center">
+    <div class="container">
+        <p class="lead">Join us in transforming ideas into reality. Connect with Digital Incubators and take the first step towards your business success.</p>
+        <a class="btn btn-primary" href="#">Get Started</a>
+    </div>
+</section>
+
+<!-- Bootstrap JS and jQuery (required for Bootstrap components) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

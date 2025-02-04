@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Digital Incubators</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- Custom Styles -->
+    <style>
+        /* Add your custom styles here */
+        body {
+            background-color: #3c6995;
+        }
+
+        .hero-section {
+            background-image: url('./bg.png'); /* Replace with your actual hero image */
+            background-size: cover;
+            color: #000000;
+            padding: 150px 1;
+        }
+
+        .features-section {
+            background-color: #fff;
+            padding: 80px 0;
+        }
+
+        .feature-icon {
+            color: #007bff;
+        }
+
+        .about-section {
+            background-color: #f8f9fa;
+            padding: 80px 0;
+        }
+
+        .contact-section {
+            background-color: #007bff;
+            color: #fff;
+            padding: 80px 0;
+        }
+
+        /* Style for video modal */
+        .modal-content {
+            max-width: 700px; /* Set maximum width */
+            margin: 30px auto; /* Center the modal */
+        }
+
+        .modal-content video {
+            width: 100%;
+            max-height: 100%; /* Set maximum height */
+        }
+
+        .modal-content .modal-body {
+            padding: 0; /* Remove padding from modal body */
+        }
+
+        .modal-content .modal-body video {
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto; /* Center the video */
+            width: 700px;
+        }
+
+        .modal-content .modal-body video::-webkit-media-controls {
+            display: none; /* Hide default video controls */
+        }
+
+        .modal-content .modal-body video::-webkit-media-controls-enclosure {
+            display: none; /* Hide default video controls enclosure */
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="https://img.icons8.com/cotton/64/network-care--v1.png" style="width: 50px;height: 50px;">&nbsp;<b>Digital Incubators</b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <!-- Login Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="loginDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Login
+                </a>
+                <div class="dropdown-menu" aria-labelledby="loginDropdown">
+                    <a class="dropdown-item" href="admin/">Admin</a>
+                    <a class="dropdown-item" href="user/">Entrepreneur</a>
+                    <a class="dropdown-item" href="mentor/">Mentor</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="blogs.html">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Video Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body d-flex align-item-center justify-content-center">
+                <!-- Embedded video -->
+                <video controls autoplay id="modalVideo">
+                    <source src="./di video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Hero Section -->
+<section class="hero-section text-center" style="background-image: url('./46.jpg'); background-size: cover; width: auto; height: 700px; background-color: #333; color: hsl(0, 0%, 0%); padding: 50px 0;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h1 class="display-4 font-weight-bold">Empower Your Business Growth</h1>
+                <p class="lead">Connecting Visionary Entrepreneurs with Strategic Mentors!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features-section text-center">
+    <div class="container">
+        <div class="row">
+            <!-- Feature 1 -->
+            <div class="col-md-4">
+                <i class="fas fa-lightbulb fa-3x mb-3 feature-icon"></i>
+                <h3>Expert Guidance</h3>
+                <p>Connect with experienced investors providing valuable insights and guidance for your business.</p>
+            </div>
+            <!-- Feature 2 -->
+            <div class="col-md-4">
+                <i class="fas fa-handshake fa-3x mb-3 feature-icon"></i>
+                <h3>Strategic Partnerships</h3>
+                <p>Build strategic partnerships with investors who share a common vision for success.</p>
+            </div>
+            <!-- Feature 3 -->
+            <div class="col-md-4">
+                <i class="fas fa-chart-line fa-3x mb-3 feature-icon"></i>
+                <h3>Financial Growth</h3>
+                <p>Accelerate your business growth with access to capital and financial resources.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Us Section -->
+<section class="about-section text-center">
+    <div class="container">
+        <h2>About Us</h2>
+        <p>We are a dedicated platform connecting visionary entrepreneurs with forward-thinking investors. Our mission is to foster innovation and drive sustainable business growth.</p>
+        <a class="btn btn-secondary" href="#">Learn More</a>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-section text-center">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>Have questions or want to learn more? Contact us below.</p>
+        <a class="btn btn-primary" href="#">Contact Now</a>
+    </div>
+</section>
+
+<!-- Bootstrap JS and jQuery (required for Bootstrap components) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        // Check if the modal has been shown during the current session
+        var modalShown = sessionStorage.getItem('modalShown');
+        if (!modalShown) {
+            // Show the modal
+            $('#videoModal').modal('show');
+            
+            // Set a flag in sessionStorage indicating that the modal has been shown
+            sessionStorage.setItem('modalShown', true);
+        }
+
+        // Pause video when modal is closed
+        $('#videoModal').on('hidden.bs.modal', function (e) {
+            $('#modalVideo').get(0).pause();
+        });
+
+        // Function to remove video source when user logs out
+        function removeVideoSource() {
+            $('#modalVideo source').remove();
+        }
+
+        // Example: call removeVideoSource() when the user logs out
+        // This might depend on how your logout functionality is implemented
+        $('#logoutButton').click(function() {
+            removeVideoSource();
+        });
+    });
+</script>
+
+
+</body>
+</html>
